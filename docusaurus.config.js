@@ -6,8 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Lightning',
+  tagline:
+    '⚡️⚡️⚡️ lightning is a lightweight and fast web framework for Go. It is designed to be easy to use and highly performant.',
   favicon: 'img/favicon.ico',
   deploymentBranch: 'gh-pages',
 
@@ -65,7 +66,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'Lightning',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -73,13 +74,18 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'introduction',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Documentation',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://pkg.go.dev/github.com/go-labx/lightning',
+            label: 'API',
+            position: 'left',
+          },
+          // { to: '/blog', label: 'Blog', position: 'left' },
+          {
+            href: 'https://github.com/go-labx/lightning',
             label: 'GitHub',
             position: 'right',
           },
@@ -92,8 +98,28 @@ const config = {
             title: 'Docs',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Introduction',
+                to: '/docs/introduction',
+              },
+              {
+                label: 'Quickstart',
+                to: '/docs/quickstart',
+              },
+              {
+                label: 'Routing',
+                to: '/docs/routing',
+              },
+              {
+                label: 'Context',
+                to: '/docs/context',
+              },
+              {
+                label: 'Middleware',
+                to: '/docs/middleware',
+              },
+              {
+                label: 'CLI Tool',
+                to: '/docs/cli',
               },
             ],
           },
@@ -102,15 +128,15 @@ const config = {
             items: [
               {
                 label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                href: '#',
               },
               {
                 label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                href: '#',
               },
               {
                 label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                href: '#',
               },
             ],
           },
@@ -118,17 +144,17 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
+                label: 'API',
+                href: 'https://pkg.go.dev/github.com/go-labx/lightning',
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/go-labx/lightning',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} lightning, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
