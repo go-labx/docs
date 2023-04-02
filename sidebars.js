@@ -21,8 +21,8 @@ const sidebars = {
     'introduction',
     'quickstart',
     'routing',
-    'context',
     'middleware',
+    'context',
     {
       type: 'category',
       label: 'Examples',
