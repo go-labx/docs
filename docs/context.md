@@ -1,10 +1,10 @@
 # Context
 
-The Context struct in the lightning represents the context of an HTTP request / response. It contains information about the request and response, as well as methods for manipulating them.
+**The Context struct in the lightning represents the context of an HTTP request / response.** It contains information about the request and response, as well as methods for manipulating them.
 
 ## Request
 
-The Request of the Lightning framework's Context struct provides various methods for accessing and manipulating the HTTP request data. These methods allow developers to retrieve the raw request body or parse it as JSON, access URL parameters and query parameters, and access the HTTP method and URL path of the request.
+The Request of the `Lightning` framework's Context struct provides various methods for accessing and manipulating the HTTP request data. These methods allow developers to retrieve the raw request body or parse it as JSON, access URL parameters and query parameters, and access the HTTP method and URL path of the request.
 
 It contains the following fields:
 
@@ -12,8 +12,6 @@ It contains the following fields:
 - `ctx.Path`: the URL path of the request
 
 In addition to these fields, the Request also provides the following methods:
-
-The URL parameters parsed from the request URL. These parameters may be used to access request parameters in the request.
 
 ### ctx.Param(key string)
 
@@ -81,7 +79,7 @@ returns the HTTP status code of the response.
 
 sets the HTTP status code for the response.
 
-### ctx.AddHeader(key, value string)
+### ctx.AddHeader(key string, value string)
 
 adds a new header key-value pair to the response.
 
