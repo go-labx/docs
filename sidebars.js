@@ -31,6 +31,7 @@ const sidebars = {
         'examples/cookie',
         'examples/routing_group',
         'examples/custom_not_found',
+        'examples/success_and_fail',
       ],
     },
     'cli',
