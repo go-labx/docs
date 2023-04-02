@@ -9,7 +9,7 @@ const config = {
   title: 'Lightning',
   tagline:
     '⚡️⚡️⚡️ lightning is a lightweight and fast web framework for Go. It is designed to be easy to use and highly performant.',
-  favicon: 'img/favicon.ico',
+  favicon: 'favicon.ico',
   deploymentBranch: 'gh-pages',
 
   // Set the production url of your site here
