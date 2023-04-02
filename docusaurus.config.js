@@ -20,7 +20,7 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'go-labx', // Usually your GitHub org/user name.
+  organizationName: 'lightning', // Usually your GitHub org/user name.
   projectName: 'lightning.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
