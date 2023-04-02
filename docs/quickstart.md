@@ -61,12 +61,17 @@ go run app.go
 
 The go `lightning` framework has many additional features that make it a powerful tool for developing web applications, including:
 
-- Middleware support
-- Built-in JSON and HTML rendering
-- And much more!
+- 🎨 Built-in JSON and HTML rendering
+- ⚡ Fast routing, with routing algorithm implemented based on Trie tree
+- 🔥 Support for grouping routes and applying middleware to specific groups
+- 📝 Supports middleware, include global scope and route socpe middleware
+- 🚀 Customizable 404 Not Found and 500 Internal Server Error handler functions
+- 🎉 And much more!
 
 To learn more about these features and how to use them, check out the official go `lightning` framework documentation.
 
 ## Conclusion
 
-With this basic example and additional features, you can begin exploring the go `lightning` framework and building your own web applications. Happy coding!
+With this basic example and additional features, you can begin exploring the go `lightning` framework and building your own web applications.
+
+🎉 🎉 🎉 Happy coding!

@@ -39,6 +39,16 @@ const FeatureList: FeatureItem[] = [
       </>
     ),
   },
+  // {
+  //   title: 'Power by AI',
+  //   Svg: require('@site/static/img/3.svg').default,
+  //   description: (
+  //     <>
+  //       The framework is designed to be lightweight and fast, it can handle a
+  //       large number of requests with low latency.
+  //     </>
+  //   ),
+  // },
 ];
 
 function Feature({ title, Svg, description }: FeatureItem) {
