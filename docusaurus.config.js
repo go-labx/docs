@@ -13,15 +13,15 @@ const config = {
   deploymentBranch: 'gh-pages',
 
   // Set the production url of your site here
-  url: 'https://lightning.github.io',
+  url: 'https://go-labx.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'lightning', // Usually your GitHub org/user name.
-  projectName: 'lightning.github.io', // Usually your repo name.
+  organizationName: 'go-labx', // Usually your GitHub org/user name.
+  projectName: 'go-labx.github.io', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
