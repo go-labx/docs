@@ -45,12 +45,13 @@ const sidebars = {
     // },
   ],
   middlewareSidebar: [
-    'middlewares/introduction',
-    {
-      type: 'category',
-      label: 'Official middleware',
-      items: ['middlewares/requestid'],
-    },
+    // 'middlewares/introduction',
+    'middlewares/requestid',
+    // {
+    //   type: 'category',
+    //   label: 'Official middleware',
+    //   items: ['middlewares/requestid'],
+    // },
     // {
     //   type: 'category',
     //   label: 'Community Middleware',
