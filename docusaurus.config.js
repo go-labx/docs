@@ -63,12 +63,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      sidebarCollapsed: false,
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
         title: 'Lightning',
         logo: {
-          alt: 'My Site Logo',
+          alt: 'Lightning',
           src: 'img/logo.svg',
         },
         items: [
@@ -77,6 +78,12 @@ const config = {
             docId: 'introduction',
             position: 'left',
             label: 'Documentation',
+          },
+          {
+            type: 'doc',
+            docId: 'middlewares/requestid',
+            position: 'left',
+            label: 'Middleware',
           },
           {
             href: 'https://pkg.go.dev/github.com/go-labx/lightning',

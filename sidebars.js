@@ -44,6 +44,20 @@ const sidebars = {
     //   items: ['tutorial-basics/create-a-document'],
     // },
   ],
+  middlewareSidebar: [
+    // 'middlewares/introduction',
+    'middlewares/requestid',
+    // {
+    //   type: 'category',
+    //   label: 'Official middleware',
+    //   items: ['middlewares/requestid'],
+    // },
+    // {
+    //   type: 'category',
+    //   label: 'Community Middleware',
+    //   items: ['middlewares/requestid'],
+    // },
+  ],
 };
 
 module.exports = sidebars;
