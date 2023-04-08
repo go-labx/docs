@@ -26,6 +26,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Examples',
+      collapsed: false,
       items: [
         'examples/contextual-data',
         'examples/cookie',
@@ -50,6 +51,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Official middleware',
+      collapsed: false,
       items: [
         'middlewares/requestid',
         'middlewares/compress',
