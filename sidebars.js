@@ -47,6 +47,7 @@ const sidebars = {
   middlewareSidebar: [
     // 'middlewares/introduction',
     'middlewares/requestid',
+    'middlewares/compress',
     // {
     //   type: 'category',
     //   label: 'Official middleware',
