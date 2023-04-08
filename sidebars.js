@@ -56,6 +56,7 @@ const sidebars = {
         'middlewares/requestid',
         'middlewares/compress',
         'middlewares/cors',
+        'middlewares/static',
       ],
     },
     // {
