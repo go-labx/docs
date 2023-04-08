@@ -26,6 +26,7 @@ const sidebars = {
     {
       type: 'category',
       label: 'Examples',
+      collapsed: false,
       items: [
         'examples/contextual-data',
         'examples/cookie',
@@ -45,15 +46,18 @@ const sidebars = {
     // },
   ],
   middlewareSidebar: [
-    // 'middlewares/introduction',
-    'middlewares/requestid',
-    'middlewares/compress',
-    'middlewares/cors',
-    // {
-    //   type: 'category',
-    //   label: 'Official middleware',
-    //   items: ['middlewares/requestid'],
-    // },
+    'middlewares/introduction',
+
+    {
+      type: 'category',
+      label: 'Official middleware',
+      collapsed: false,
+      items: [
+        'middlewares/requestid',
+        'middlewares/compress',
+        'middlewares/cors',
+      ],
+    },
     // {
     //   type: 'category',
     //   label: 'Community Middleware',

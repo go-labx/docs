@@ -66,11 +66,3 @@ The cors middleware can be customized with the following options:
 ## API Documentation
 
 For detailed API documentation and usage examples, please refer to the [documentation](https://pkg.go.dev/github.com/lightning-contrib/cors).
-
-## Contributing
-
-Contributions are welcome! Please see [CONTRIBUTING.md](https://github.com/lightning-contrib/cors/blob/main/CONTRIBUTING.md) for more information.
-
-## License
-
-This middleware is licensed under the [MIT License](https://github.com/lightning-contrib/cors/blob/main/LICENSE). 
