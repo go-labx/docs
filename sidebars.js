@@ -48,6 +48,7 @@ const sidebars = {
     // 'middlewares/introduction',
     'middlewares/requestid',
     'middlewares/compress',
+    'middlewares/cors',
     // {
     //   type: 'category',
     //   label: 'Official middleware',
