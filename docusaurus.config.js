@@ -81,7 +81,7 @@ const config = {
           },
           {
             type: 'doc',
-            docId: 'middlewares/requestid',
+            docId: 'middlewares/introduction',
             position: 'left',
             label: 'Middleware',
           },
