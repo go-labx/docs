@@ -1,6 +1,6 @@
 # compress
 
-This is a middleware for [lightning](https://github.com/go-labx/lightning) that provides compression for HTTP responses. It supports four compression algorithms: Brotli, Deflate, Gzip, and Zstd.
+This is a middleware for [lightning](https://github.com/go-labx/lightning) that provides compression for HTTP responses. It supports four compression algorithms: `Brotli`, `Deflate`, `Gzip`, and `Zstd`.
 
 ## Installation
 

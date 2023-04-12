@@ -57,6 +57,7 @@ const sidebars = {
         'middlewares/compress',
         'middlewares/cors',
         'middlewares/static',
+        'middlewares/pprof',
       ],
     },
     // {

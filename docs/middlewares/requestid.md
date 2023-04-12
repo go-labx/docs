@@ -18,23 +18,23 @@ Here is an example of how to use `requestid` middleware:
 package main
 
 import (
-	"github.com/go-labx/lightning"
-	"github.com/lightning-contrib/requestid"
+    "github.com/go-labx/lightning"
+    "github.com/lightning-contrib/requestid"
 )
 
 func main() {
-	app := lightning.NewApp()
+    app := lightning.NewApp()
 
-  // use the requestid middleware
-  app.Use(requestid.Default())
+    // use the requestid middleware
+    app.Use(requestid.Default())
 
-	app.Get("/ping", func(ctx *lightning.Context) {
-		ctx.JSON(200, map[string]string{
-			"message": "pong",
-		})
-	})
+    app.Get("/ping", func(ctx *lightning.Context) {
+        ctx.JSON(200, map[string]string{
+            "message": "pong",
+        })
+    })
 
-	app.Run()
+    app.Run()
 }
 ```
 
