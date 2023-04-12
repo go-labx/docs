@@ -38,7 +38,7 @@ func main() {
 }
 ```
 
-By default, the cors middleware allows all origins (*), all HTTP methods (GET, POST, PUT, DELETE), all headers (*), and exposes all headers (*). You can customize these options by using the various option functions provided by the cors package.
+By default, the cors middleware allows all origins (`*`), all HTTP methods (GET, POST, PUT, DELETE), all headers (*), and exposes all headers (*). You can customize these options by using the various option functions provided by the cors package.
 
 Here's an example of how to customize the allowed origins:
 
