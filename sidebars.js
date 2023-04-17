@@ -23,6 +23,7 @@ const sidebars = {
     'routing',
     'middleware',
     'context',
+    'validation',
     {
       type: 'category',
       label: 'Examples',
