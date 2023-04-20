@@ -30,7 +30,7 @@ The Success method returns data in the following format:
 {
   "code": 0,
   "data": "hello world",
-  "msg": "ok"
+  "message": "ok"
 }
 ```
 
@@ -39,6 +39,6 @@ The Fail method returns data in the following format:
 ```json
 {
   "code": 9999,
-  "msg": "network error"
+  "message": "network error"
 }
 ```

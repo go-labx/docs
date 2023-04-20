@@ -5,8 +5,9 @@ package main
 
 import (
 	"fmt"
-	"github.com/go-labx/lightning"
 	"net/http"
+
+	"github.com/go-labx/lightning"
 )
 
 func main() {
@@ -22,14 +23,13 @@ func main() {
 		fmt.Println(cookies)
 
 		// set a new cookie
-		ctx.SetCookie("sid", "xxxxxxxxxx")
+		ctx.SetCookie("sid", "sid:xxxxxxxxxx")
 
 		// set a custom cookie
 		ctx.SetCustomCookie(&http.Cookie{
-			Name:   "sessionId",
-			Value:  "xxxxxxxxxx",
-			Path:   "/",
-			MaxAge: 120,
+			Name:  "sessionId",
+			Value: "sessionId:xxxxxxxxxx",
+			Path:  "/",
 		})
 
 		ctx.JSON(http.StatusOK, map[string]string{
