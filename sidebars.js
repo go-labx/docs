@@ -18,15 +18,39 @@ const sidebars = {
 
   // But you can create a sidebar manually
   tutorialSidebar: [
-    'introduction',
-    'quickstart',
-    'routing',
-    'middleware',
-    'context',
-    'validation',
+    {
+      type: 'doc',
+      id: 'introduction',
+      label: '📝 Introduction',
+    },
+    {
+      type: 'doc',
+      id: 'quickstart',
+      label: '🚀 Quickstart',
+    },
+    {
+      type: 'doc',
+      id: 'routing',
+      label: '🎨 Routing',
+    },
+    {
+      type: 'doc',
+      id: 'middleware',
+      label: '💥 Middleware',
+    },
+    {
+      type: 'doc',
+      id: 'context',
+      label: '🍻 Context',
+    },
+    {
+      type: 'doc',
+      id: 'validation',
+      label: '📌 Validation',
+    },
     {
       type: 'category',
-      label: 'Examples',
+      label: '🎉 Examples',
       collapsed: false,
       items: [
         'examples/contextual-data',
@@ -36,9 +60,21 @@ const sidebars = {
         'examples/success_and_fail',
       ],
     },
-    'cli',
-    'deployment',
-    'faq',
+    {
+      type: 'doc',
+      id: 'cli',
+      label: '🚧 CLI',
+    },
+    {
+      type: 'doc',
+      id: 'deployment',
+      label: '🚧 Deployment',
+    },
+    {
+      type: 'doc',
+      id: 'faq',
+      label: '🚧 FAQ',
+    },
 
     // {
     //   type: 'category',
