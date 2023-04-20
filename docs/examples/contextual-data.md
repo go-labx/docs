@@ -7,8 +7,8 @@ package main
 
 import (
 	"fmt"
+
 	"github.com/go-labx/lightning"
-	"net/http"
 )
 
 func main() {
@@ -24,13 +24,16 @@ func main() {
 
 	app.Use(func(ctx *lightning.Context) {
 		session := ctx.GetData("session")
-		// write your logic here
+		// write your logic here...
+		fmt.Println(session)
+
 		ctx.Next()
 	})
 
 	app.Get("/api/user", func(ctx *lightning.Context) {
 		session := ctx.GetData("session")
-		// write your logic here
+		// write your logic here...
+		fmt.Println(session)
 
 		ctx.Text(200, "hello world")
 	})
