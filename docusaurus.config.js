@@ -7,8 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Lightning',
-  tagline:
-    '⚡️⚡️⚡️ lightning is a lightweight and fast web framework for Go. It is designed to be easy to use and highly performant.',
+  tagline: 'Lightning is a lightweight and fast web framework for Go. It is designed to be easy to use and highly performant. ⚡️⚡️⚡️ ',
   favicon: 'favicon.png',
   deploymentBranch: 'gh-pages',
 
