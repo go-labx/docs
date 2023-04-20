@@ -26,8 +26,9 @@ To start building your web application, create a new file `app.go` and add the f
 package main
 
 import (
-	"github.com/go-labx/lightning"
 	"net/http"
+
+	"github.com/go-labx/lightning"
 )
 
 func main() {
@@ -39,11 +40,11 @@ func main() {
 		})
 	})
 
-	app.Run(":6789")
+	app.Run()
 }
 ```
 
-In this example, we have created a simple web application that serves a JSON response at the URL ("/ping").
+In this example, we have created a simple web application that serves a JSON response at the URL `/ping`.
 
 - The `lightning.DefaultApp()` function initializes a new instance of the framework.
 - the `app.Get()` function defines a new route that responds to HTTP GET requests at the specified URL.
