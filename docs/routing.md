@@ -9,13 +9,13 @@ The `Lightning` web framework provides a built-in router to handle incoming HTTP
 
 ## Basic routing
 
-Basics are the most fundamental form of routing in the `lightning` framework. It supports various HTTP request methods such as GET, POST, PUT, DELETE, etc. Here’s an example of a GET request:
+Basics are the most fundamental form of routing in the `lightning` framework. It supports various HTTP request methods such as `GET`, `POST`, `PUT`, `DELETE`, etc. Here’s an example of a `GET` request:
 
 ```go
 app.Get("/ping", func(ctx *lightning.Context) {
-    ctx.JSON(map[string]string{
-        "message": "pong",
-    })
+	ctx.JSON(http.StatusOK, map[string]string{
+		"message": "pong",
+	})
 })
 ```
 
@@ -48,7 +48,7 @@ app.Get("/api/user/:userId/article/:articleId", func(ctx *lightning.Context) {
 
 ## Wildcards routing
 
-Wildcard routes are used to **match any part of a URL**. A wildcard is denoted by an asterisk ( `*` ) followed by a name. For example, the URL pattern `/files/*filepath` will match any URL that starts with `/files/` and has a dynamic `filepath` parameter.
+Wildcard routes are used to **match any part of a URL**. A wildcard is denoted by an asterisk `*` followed by a name. For example, the URL pattern `/files/*filepath` will match any URL that starts with `/files/` and has a dynamic `filepath` parameter.
 
 For example, the following code defines a GET route that will handle all requests that start with `/files/`:
 
