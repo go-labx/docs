@@ -1,5 +1,52 @@
 # Cookie
 
+In this article, we will explore how to use Lightning's cookie functionality to manage cookies in your web application.
+
+## Setting a Cookie
+
+To set a cookie in Lightning, you can use the `SetCookie` method of the Context object. This method takes two arguments: the name of the cookie and its value.
+
+```go
+ctx.SetCookie("sid", "sid:xxxxxxxxxx")
+```
+
+This will set a cookie named "sid" with the value "sid:xxxxxxxxxx". The cookie will be sent to the client in the response headers.
+
+You can also set additional options for the cookie, such as the `expiration time`, `the domain`, and `the path`. To do this, you can use the `http.Cookie` struct and pass it to the `SetCustomCookie` method.
+
+```go
+ctx.SetCustomCookie(&http.Cookie{
+    Name:  "sessionId",
+    Value: "sessionId:xxxxxxxxxx",
+    Path:  "/",
+})
+```
+
+This will set a cookie named "sessionId" with the value "sessionId:xxxxxxxxxx", and a path of "/".
+
+## Retrieving a Cookie
+
+To retrieve a cookie in Lightning, you can use the `Cookie` method of the Context object. This method takes the name of the cookie as an argument and returns its value.
+
+```go
+cookie := ctx.Cookie("sid")
+```
+
+This will retrieve the value of the "sid" cookie.
+
+You can also retrieve all cookies sent by the client using the `Cookies` method.
+
+```go
+cookies := ctx.Cookies()
+```
+
+This will retrieve all cookies sent by the client.
+
+## Code Example
+
+The full sample code is as follows：
+
+
 ```go
 package main
 
@@ -40,8 +87,3 @@ func main() {
 	app.Run()
 }
 ```
-
-- To get a cookie, we use the `ctx.cookie()` method which returns the cookie with the given name.
-- To retrieve all cookies, we can use the `ctx.Cookies()` method which returns a slice of all cookies.
-- To set a new cookie, we use the `ctx.SetCookie()` method which takes in the name and value of the cookie as arguments.
-- To set a custom cookie, we use the `ctx.SetCustomCookie()` method which takes in a pointer to an http.Cookie struct as an argument.
