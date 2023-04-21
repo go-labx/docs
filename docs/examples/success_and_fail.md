@@ -24,7 +24,7 @@ func main() {
 }
 ```
 
-The Success method returns data in the following format:
+The `Success` method returns data in the following format:
 
 ```json
 {
@@ -34,7 +34,7 @@ The Success method returns data in the following format:
 }
 ```
 
-The Fail method returns data in the following format:
+The `Fail` method returns data in the following format:
 
 ```json
 {
