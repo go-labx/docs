@@ -57,6 +57,7 @@ const sidebars = {
         'examples/cookie',
         'examples/routing_group',
         'examples/response_header',
+        'examples/response_body',
         'examples/custom_not_found',
         'examples/success_and_fail',
       ],
