@@ -56,6 +56,7 @@ const sidebars = {
         'examples/contextual-data',
         'examples/cookie',
         'examples/routing_group',
+        'examples/response_header',
         'examples/custom_not_found',
         'examples/success_and_fail',
       ],
